@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Coworking.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Coworking.Api.Controllers.AdminController">
+            <summary>
+            Admin controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.#ctor(Coworking.Api.Application.Contracts.Services.IAdminService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="adminService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.Get">
+            <summary>
+            Returns every admin
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.Get(System.Int32)">
+            <summary>
+            Returns the admin with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.Post(Coworking.Api.ViewModels.AdminModel)">
+            <summary>
+            Create a new Admin
+            </summary>
+            <param name="admin"></param>
+            <returns>Admin</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.Put(Coworking.Api.ViewModels.AdminModel)">
+            <summary>
+            Update an admin
+            </summary>
+            <param name="admin"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.AdminController.Delete(System.Int32)">
+            <summary>
+            Delete an admin
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.BaseController`2">
+            <summary>
+            Base controller
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="R"></typeparam>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.#ctor(Coworking.Api.Application.Contracts.Services.IBaseCrudService{`1},Coworking.Api.Application.Configuration.IAppConfig,Coworking.Api.Mappers.IMapper{`0,`1})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="service"></param>
+            /// <param name="config"></param>
+            /// <param name="mapper"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.Get">
+            <summary>
+            Returns every item
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.Get(System.Int32)">
+            <summary>
+            Returns the item with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.Post(`0)">
+            <summary>
+            Create a new item
+            </summary>
+            <param name="item"></param>
+            <returns>Item</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.Put(`0)">
+            <summary>
+            Update an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BaseController`2.Delete(System.Int32)">
+            <summary>
+            Delete an item by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.BookingController">
+            <summary>
+            Booking controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.#ctor(Coworking.Api.Application.Contracts.Services.IBookingService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="bookingService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.Get">
+            <summary>
+            Returns every booking
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.Get(System.Int32)">
+            <summary>
+            Returns the booking with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.Post(Coworking.Api.ViewModels.BookingModel)">
+            <summary>
+            Create a new booking
+            </summary>
+            <param name="booking"></param>
+            <returns>Booking</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.Put(Coworking.Api.ViewModels.BookingModel)">
+            <summary>
+            Update an booking
+            </summary>
+            <param name="booking"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.BookingController.Delete(System.Int32)">
+            <summary>
+            Delete an booking
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.OfficeController">
+            <summary>
+            Office controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.#ctor(Coworking.Api.Application.Contracts.Services.IOfficeService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="officeService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.Get">
+            <summary>
+            Returns every office
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.Get(System.Int32)">
+            <summary>
+            Returns the office with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.Post(Coworking.Api.ViewModels.OfficeModel)">
+            <summary>
+            Create a new office
+            </summary>
+            <param name="office"></param>
+            <returns>Office</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.Put(Coworking.Api.ViewModels.OfficeModel)">
+            <summary>
+            Update an office
+            </summary>
+            <param name="office"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.OfficeController.Delete(System.Int32)">
+            <summary>
+            Delete an office
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.RoomController">
+            <summary>
+            Room controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.#ctor(Coworking.Api.Application.Contracts.Services.IRoomService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="roomService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.Get">
+            <summary>
+            Returns every room
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.Get(System.Int32)">
+            <summary>
+            Returns the room with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.Post(Coworking.Api.ViewModels.RoomModel)">
+            <summary>
+            Create a new room
+            </summary>
+            <param name="room"></param>
+            <returns>Room</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.Put(Coworking.Api.ViewModels.RoomModel)">
+            <summary>
+            Update an room
+            </summary>
+            <param name="room"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.RoomController.Delete(System.Int32)">
+            <summary>
+            Delete an room
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.ServiceController">
+            <summary>
+            Service controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.#ctor(Coworking.Api.Application.Contracts.Services.IServiceService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serviceService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.Get">
+            <summary>
+            Returns every service
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.Get(System.Int32)">
+            <summary>
+            Returns the service with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.Post(Coworking.Api.ViewModels.ServiceModel)">
+            <summary>
+            Create a new service
+            </summary>
+            <param name="service"></param>
+            <returns>Service</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.Put(Coworking.Api.ViewModels.ServiceModel)">
+            <summary>
+            Update an service
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.ServiceController.Delete(System.Int32)">
+            <summary>
+            Delete an service
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Coworking.Api.Controllers.UserController">
+            <summary>
+            User controller
+            </summary>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.#ctor(Coworking.Api.Application.Contracts.Services.IUserService,Coworking.Api.Application.Configuration.IAppConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService"></param>
+            /// <param name="config"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.Get">
+            <summary>
+            Returns every user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Returns the user with the specified id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.Post(Coworking.Api.ViewModels.UserModel)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="user"></param>
+            <returns>User</returns>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.Put(Coworking.Api.ViewModels.UserModel)">
+            <summary>
+            Update an user
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:Coworking.Api.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Delete an user
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
