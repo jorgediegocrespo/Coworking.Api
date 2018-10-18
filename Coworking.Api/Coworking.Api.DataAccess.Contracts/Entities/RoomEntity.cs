@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Base.DataAccess.Contracts.Entities;
 
 namespace Coworking.Api.DataAccess.Contracts.Entities
 {

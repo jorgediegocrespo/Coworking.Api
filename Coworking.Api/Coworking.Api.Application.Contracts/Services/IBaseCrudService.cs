@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Coworking.Api.Application.Contracts.Services
 {
     public interface IBaseCrudService<T>
-        where T : Base
+        where T : BaseBusinessModel
     {
         Task<IEnumerable<T>> GetAll();
         Task<T> Get(int id);

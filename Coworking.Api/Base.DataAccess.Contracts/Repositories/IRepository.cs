@@ -1,8 +1,8 @@
-﻿using Coworking.Api.DataAccess.Contracts.Entities;
+﻿using Base.DataAccess.Contracts.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Coworking.Api.DataAccess.Contracts.Repositories
+namespace Base.DataAccess.Contracts.Repositories
 {
     public interface IRepository<T> where T : IBaseWithIdEntity
     {

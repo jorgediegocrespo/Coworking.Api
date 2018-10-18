@@ -1,6 +1,6 @@
 ﻿namespace Coworking.Api.Business.Models
 {
-    public class Admin : Base
+    public class Admin : BaseBusinessModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coworking.Api.DataAccess.Repositories
 {
-    public class OfficeRepository : BaseRepository<OfficeEntity>, IOfficeRepository
+    public class OfficeRepository : CoworkingRepository<OfficeEntity>, IOfficeRepository
     {
         protected override DbSet<OfficeEntity> DbEntity
         {

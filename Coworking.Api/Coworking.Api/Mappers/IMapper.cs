@@ -5,7 +5,7 @@ namespace Coworking.Api.Mappers
 {
     public interface IMapper<T, R>
         where T : BaseModel
-        where R : Base
+        where R : BaseBusinessModel
     {
         T Map(R dto);
         R Map(T dto);

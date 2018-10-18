@@ -1,4 +1,4 @@
-﻿namespace Coworking.Api.DataAccess.Contracts.Entities
+﻿namespace Base.DataAccess.Contracts.Entities
 {
     public interface IBaseWithIdEntity : IBaseEntity
     {

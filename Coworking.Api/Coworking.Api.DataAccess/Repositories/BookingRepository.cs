@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coworking.Api.DataAccess.Repositories
 {
-    public class BookingRepository : BaseRepository<BookingEntity>, IBookingRepository
+    public class BookingRepository : CoworkingRepository<BookingEntity>, IBookingRepository
     {
         protected override DbSet<BookingEntity> DbEntity
         {

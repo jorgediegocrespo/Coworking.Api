@@ -1,6 +1,6 @@
 ﻿namespace Coworking.Api.Business.Models
 {
-    public class Base
+    public class BaseBusinessModel
     {
     }
 }

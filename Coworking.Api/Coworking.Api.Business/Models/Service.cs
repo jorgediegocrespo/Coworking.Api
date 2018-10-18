@@ -1,6 +1,6 @@
 ﻿namespace Coworking.Api.Business.Models
 {
-    public class Service : Base
+    public class Service : BaseBusinessModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

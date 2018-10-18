@@ -1,9 +1,9 @@
-﻿using Coworking.Api.Application.Configuration;
+﻿using Base.DataAccess.Contracts.Entities;
+using Base.DataAccess.Contracts.Repositories;
+using Coworking.Api.Application.Configuration;
 using Coworking.Api.Application.Contracts.Services;
 using Coworking.Api.Application.Mappers;
 using Coworking.Api.Business.Models;
-using Coworking.Api.DataAccess.Contracts.Entities;
-using Coworking.Api.DataAccess.Contracts.Repositories;
 using Polly;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Coworking.Api.Application.Services
 {
     public abstract class BaseService<T, R> : IBaseCrudService<T>
-        where T : Base
+        where T : BaseBusinessModel
         where R : class, IBaseWithIdEntity
     {
         private readonly IRepository<R> _repository;

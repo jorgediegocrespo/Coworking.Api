@@ -1,4 +1,5 @@
-﻿using Coworking.Api.DataAccess.Contracts.Entities;
+﻿using Base.DataAccess.Contracts.Repositories;
+using Coworking.Api.DataAccess.Contracts.Entities;
 
 namespace Coworking.Api.DataAccess.Contracts.Repositories
 {

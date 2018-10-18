@@ -1,4 +1,6 @@
-﻿namespace Coworking.Api.DataAccess.Contracts.Entities
+﻿using Base.DataAccess.Contracts.Entities;
+
+namespace Coworking.Api.DataAccess.Contracts.Entities
 {
     public class AdminEntity : IBaseWithIdEntity
     {

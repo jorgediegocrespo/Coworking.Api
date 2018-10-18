@@ -18,7 +18,7 @@ namespace Coworking.Api.Controllers
     [Authorize]
     public class BaseController<T, R> : Controller
         where T : BaseModel
-        where R : Base
+        where R : BaseBusinessModel
     {
         private readonly IBaseCrudService<R> _service;
         private readonly IAppConfig _config;

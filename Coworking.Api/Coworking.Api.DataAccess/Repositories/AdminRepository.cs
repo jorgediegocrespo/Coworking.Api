@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coworking.Api.DataAccess.Repositories
 {
-    public class AdminRepository : BaseRepository<AdminEntity>, IAdminRepository
+    public class AdminRepository : CoworkingRepository<AdminEntity>, IAdminRepository
     {
         protected override DbSet<AdminEntity> DbEntity
         {

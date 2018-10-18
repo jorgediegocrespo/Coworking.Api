@@ -1,29 +1,29 @@
-﻿using Coworking.Api.DataAccess.Contracts;
-using Coworking.Api.DataAccess.Contracts.Entities;
-using Coworking.Api.DataAccess.Contracts.Repositories;
+﻿using Base.DataAccess.Contracts;
+using Base.DataAccess.Contracts.Entities;
+using Base.DataAccess.Contracts.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Coworking.Api.DataAccess.Repositories
+namespace Base.DataAccess.Repositories
 {
     public abstract class BaseRepository<T> : IRepository<T>
         where T : class, IBaseWithIdEntity
     {
         //CRUD
-        protected readonly ICoworkingDbContext _coworkingDbContext;
+        protected readonly IDbContext _dbContext;
 
         protected abstract DbSet<T> DbEntity { get; }
 
-        public BaseRepository(ICoworkingDbContext coworkingDbContext)
+        public BaseRepository(IDbContext dbContext)
         {
-            _coworkingDbContext = coworkingDbContext;
+            _dbContext = dbContext;
         }
 
         public async Task<T> Add(T entity)
         {
             await DbEntity.AddAsync(entity);
-            await _coworkingDbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
 
             return entity;
         }
@@ -32,7 +32,7 @@ namespace Coworking.Api.DataAccess.Repositories
         {
             var entityToRemove = await DbEntity.SingleAsync(x => x.Id == id);
             DbEntity.Remove(entityToRemove);
-            await _coworkingDbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
 
             return;
         }
@@ -60,7 +60,7 @@ namespace Coworking.Api.DataAccess.Repositories
             UpdateEntityProperties(entityToUpdate, entity);
 
             var updateEntity = DbEntity.Update(entityToUpdate);
-            await _coworkingDbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
 
             return entityToUpdate;
         }

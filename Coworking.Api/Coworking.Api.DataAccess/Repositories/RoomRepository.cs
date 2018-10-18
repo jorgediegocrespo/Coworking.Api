@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coworking.Api.DataAccess.Repositories
 {
-    public class RoomRepository : BaseRepository<RoomEntity>, IRoomRepository
+    public class RoomRepository : CoworkingRepository<RoomEntity>, IRoomRepository
     {
         protected override DbSet<RoomEntity> DbEntity
         {

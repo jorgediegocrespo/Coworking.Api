@@ -2,7 +2,7 @@
 
 namespace Coworking.Api.Business.Models
 {
-    public class User : Base
+    public class User : BaseBusinessModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
