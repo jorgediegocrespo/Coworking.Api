@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Projects\Coworking\Coworking.Api\Dicres.RepositoryService.Application.Contracts\Dicres.RepositoryService.Application.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dicres.RepositoryService.Business\Dicres.RepositoryService.Business.csproj" />
+  </ItemGroup>
+
+</Project>

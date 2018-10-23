@@ -1,8 +1,8 @@
-﻿using Coworking.Api.Application.Configuration;
-using Coworking.Api.Application.Contracts.Services;
+﻿using Coworking.Api.Application.Contracts.Services;
 using Coworking.Api.Business.Models;
 using Coworking.Api.Mappers;
 using Coworking.Api.ViewModels;
+using Dicres.RepositoryService.Application.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,7 +14,7 @@ namespace Coworking.Api.Controllers
     /// </summary>
     [Produces("application/json")]
     [Route("api/service")]
-    public class ServiceController : BaseController<ServiceModel, Service>
+    public class ServiceController : CoworkingBaseController<ServiceModel, Service>
     {
         /// <summary>
         /// Constructor

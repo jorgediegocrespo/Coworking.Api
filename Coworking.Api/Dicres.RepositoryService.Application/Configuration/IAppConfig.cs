@@ -1,4 +1,4 @@
-﻿namespace Coworking.Api.Application.Configuration
+﻿namespace Dicres.RepositoryService.Application.Configuration
 {
     public interface IAppConfig
     {

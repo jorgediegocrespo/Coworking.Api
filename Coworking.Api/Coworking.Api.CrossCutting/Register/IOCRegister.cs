@@ -3,6 +3,7 @@ using Coworking.Api.Application.Contracts.Services;
 using Coworking.Api.Application.Services;
 using Coworking.Api.DataAccess.Contracts.Repositories;
 using Coworking.Api.DataAccess.Repositories;
+using Dicres.RepositoryService.Application.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Coworking.Api.CrossCutting.Register

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Dicres.RepositoryService.Application.Configuration;
+using Microsoft.Extensions.Configuration;
 
 namespace Coworking.Api.Application.Configuration
 {

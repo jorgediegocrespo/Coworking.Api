@@ -1,7 +1,7 @@
-﻿using Coworking.Api.Business.Models;
-using Coworking.Api.ViewModels;
+﻿using Dicres.RepositoryService.Api.ViewModels;
+using Dicres.RepositoryService.Business.Models;
 
-namespace Coworking.Api.Mappers
+namespace Dicres.RepositoryService.Api.Mappers
 {
     public interface IMapper<T, R>
         where T : BaseModel

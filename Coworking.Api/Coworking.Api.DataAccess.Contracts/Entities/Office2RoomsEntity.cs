@@ -1,4 +1,4 @@
-﻿using Base.DataAccess.Contracts.Entities;
+﻿using Dicres.RepositoryService.DataAccess.Contracts.Entities;
 
 namespace Coworking.Api.DataAccess.Contracts.Entities
 {

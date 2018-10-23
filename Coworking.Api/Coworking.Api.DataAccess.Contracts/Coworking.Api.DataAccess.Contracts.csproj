@@ -9,11 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Base.DataAccess.Contracts\Base.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.DataAccess.Contracts\Dicres.RepositoryService.DataAccess.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

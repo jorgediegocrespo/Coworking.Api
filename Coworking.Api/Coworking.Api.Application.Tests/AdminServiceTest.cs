@@ -1,9 +1,9 @@
-using Coworking.Api.Application.Configuration;
 using Coworking.Api.Application.Contracts.Services;
 using Coworking.Api.Application.Services;
 using Coworking.Api.Application.Tests.Config;
 using Coworking.Api.Application.Tests.MockRepository;
 using Coworking.Api.DataAccess.Contracts.Repositories;
+using Dicres.RepositoryService.Application.Configuration;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;

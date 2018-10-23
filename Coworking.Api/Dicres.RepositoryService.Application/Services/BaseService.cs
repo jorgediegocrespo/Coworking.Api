@@ -1,16 +1,16 @@
-﻿using Base.DataAccess.Contracts.Entities;
-using Base.DataAccess.Contracts.Repositories;
-using Coworking.Api.Application.Configuration;
-using Coworking.Api.Application.Contracts.Services;
-using Coworking.Api.Application.Mappers;
-using Coworking.Api.Business.Models;
+﻿using Dicres.RepositoryService.Application.Configuration;
+using Dicres.RepositoryService.Application.Contracts.Services;
+using Dicres.RepositoryService.Application.Mappers;
+using Dicres.RepositoryService.Business.Models;
+using Dicres.RepositoryService.DataAccess.Contracts.Entities;
+using Dicres.RepositoryService.DataAccess.Contracts.Repositories;
 using Polly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Coworking.Api.Application.Services
+namespace Dicres.RepositoryService.Application.Services
 {
     public abstract class BaseService<T, R> : IBaseCrudService<T>
         where T : BaseBusinessModel

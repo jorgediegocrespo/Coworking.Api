@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Base.DataAccess.Contracts.Entities;
+﻿using Dicres.RepositoryService.DataAccess.Contracts.Entities;
+using System.Collections.Generic;
 
 namespace Coworking.Api.DataAccess.Contracts.Entities
 {

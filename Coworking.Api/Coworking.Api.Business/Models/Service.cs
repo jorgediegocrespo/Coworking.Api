@@ -1,4 +1,6 @@
-﻿namespace Coworking.Api.Business.Models
+﻿using Dicres.RepositoryService.Business.Models;
+
+namespace Coworking.Api.Business.Models
 {
     public class Service : BaseBusinessModel
     {

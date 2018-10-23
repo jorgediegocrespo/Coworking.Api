@@ -1,4 +1,5 @@
-﻿using Coworking.Api.Business.Models;
+﻿using Dicres.RepositoryService.Application.Mappers;
+using Coworking.Api.Business.Models;
 using Coworking.Api.DataAccess.Contracts.Entities;
 
 namespace Coworking.Api.Application.Mappers

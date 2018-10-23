@@ -12,6 +12,8 @@
     <ProjectReference Include="..\Coworking.Api.Application.Contracts\Coworking.Api.Application.Contracts.csproj" />
     <ProjectReference Include="..\Coworking.Api.Business\Coworking.Api.Business.csproj" />
     <ProjectReference Include="..\Coworking.Api.DataAccess.Contracts\Coworking.Api.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.Application\Dicres.RepositoryService.Application.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.DataAccess.Contracts\Dicres.RepositoryService.DataAccess.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

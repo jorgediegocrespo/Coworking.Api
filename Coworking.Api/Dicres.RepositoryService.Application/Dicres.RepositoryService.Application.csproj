@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Projects\Coworking\Coworking.Api\Dicres.RepositoryService.Application\Dicres.RepositoryService.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dicres.RepositoryService.Application.Contracts\Dicres.RepositoryService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.Business\Dicres.RepositoryService.Business.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.DataAccess.Contracts\Dicres.RepositoryService.DataAccess.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dicres.RepositoryService.Business.Models;
+using System;
 
 namespace Coworking.Api.Business.Models
 {

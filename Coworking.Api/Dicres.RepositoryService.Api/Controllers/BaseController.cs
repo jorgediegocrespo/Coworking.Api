@@ -1,21 +1,19 @@
-﻿using Coworking.Api.Application.Configuration;
-using Coworking.Api.Application.Contracts.Services;
-using Coworking.Api.Business.Models;
-using Coworking.Api.Mappers;
-using Coworking.Api.ViewModels;
-using Microsoft.AspNetCore.Authorization;
+﻿using Dicres.RepositoryService.Api.Mappers;
+using Dicres.RepositoryService.Api.ViewModels;
+using Dicres.RepositoryService.Application.Configuration;
+using Dicres.RepositoryService.Application.Contracts.Services;
+using Dicres.RepositoryService.Business.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Coworking.Api.Controllers
+namespace Dicres.RepositoryService.Api.Controllers
 {
     /// <summary>
     /// Base controller
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="R"></typeparam>
-    [Authorize]
     public class BaseController<T, R> : Controller
         where T : BaseModel
         where R : BaseBusinessModel

@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Coworking.Api.Business\Coworking.Api.Business.csproj" />
+    <ProjectReference Include="..\Dicres.RepositoryService.Application.Contracts\Dicres.RepositoryService.Application.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

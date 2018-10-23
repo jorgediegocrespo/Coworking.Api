@@ -1,5 +1,5 @@
-﻿using System;
-using Base.DataAccess.Contracts.Entities;
+﻿using Dicres.RepositoryService.DataAccess.Contracts.Entities;
+using System;
 
 namespace Coworking.Api.DataAccess.Contracts.Entities
 {

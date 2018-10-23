@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dicres.RepositoryService.Api.ViewModels;
+using System;
 
 namespace Coworking.Api.ViewModels
 {

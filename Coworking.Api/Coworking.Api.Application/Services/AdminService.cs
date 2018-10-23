@@ -1,4 +1,5 @@
-﻿using Coworking.Api.Application.Configuration;
+﻿using Dicres.RepositoryService.Application.Configuration;
+using Dicres.RepositoryService.Application.Services;
 using Coworking.Api.Application.Contracts.Services;
 using Coworking.Api.Application.Mappers;
 using Coworking.Api.Business.Models;

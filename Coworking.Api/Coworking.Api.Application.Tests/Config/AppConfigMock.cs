@@ -1,4 +1,4 @@
-﻿using Coworking.Api.Application.Configuration;
+﻿using Dicres.RepositoryService.Application.Configuration;
 using Moq;
 
 namespace Coworking.Api.Application.Tests.Config

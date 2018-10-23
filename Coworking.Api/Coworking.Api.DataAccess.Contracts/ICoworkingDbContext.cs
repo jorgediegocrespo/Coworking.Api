@@ -1,5 +1,5 @@
-﻿using Base.DataAccess.Contracts;
-using Coworking.Api.DataAccess.Contracts.Entities;
+﻿using Coworking.Api.DataAccess.Contracts.Entities;
+using Dicres.RepositoryService.DataAccess.Contracts;
 using Microsoft.EntityFrameworkCore;
 
 namespace Coworking.Api.DataAccess.Contracts

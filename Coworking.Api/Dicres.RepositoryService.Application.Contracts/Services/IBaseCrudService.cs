@@ -1,8 +1,8 @@
-﻿using Coworking.Api.Business.Models;
+﻿using Dicres.RepositoryService.Business.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Coworking.Api.Application.Contracts.Services
+namespace Dicres.RepositoryService.Application.Contracts.Services
 {
     public interface IBaseCrudService<T>
         where T : BaseBusinessModel

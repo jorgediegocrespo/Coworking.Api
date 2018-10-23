@@ -1,6 +1,6 @@
-﻿using Base.DataAccess.Contracts.Entities;
-using Base.DataAccess.Repositories;
-using Coworking.Api.DataAccess.Contracts;
+﻿using Coworking.Api.DataAccess.Contracts;
+using Dicres.RepositoryService.DataAccess.Contracts.Entities;
+using Dicres.RepositoryService.DataAccess.Repositories;
 
 namespace Coworking.Api.DataAccess.Repositories
 {

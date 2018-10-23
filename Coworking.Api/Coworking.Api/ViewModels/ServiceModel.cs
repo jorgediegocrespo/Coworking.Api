@@ -1,4 +1,6 @@
-﻿namespace Coworking.Api.ViewModels
+﻿using Dicres.RepositoryService.Api.ViewModels;
+
+namespace Coworking.Api.ViewModels
 {
     public class ServiceModel : BaseModel
     {
